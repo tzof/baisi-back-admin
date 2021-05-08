@@ -1,11 +1,22 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
+    <Layout />
   </div>
 </template>
 
+<script>
+import Layout from "components/Layout/Layout.vue";
+export default {
+  name: "App",
+  components: {
+    Layout,
+  },
+};
+</script>
+
 <style lang="less">
-#app{
+#app {
   font-size: 10px;
   margin: 0;
   padding: 0;

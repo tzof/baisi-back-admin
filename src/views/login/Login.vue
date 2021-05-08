@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import {setLocalStorage} from 'utils/storage.js'
 import getLogin from 'network/getLogin.js'
 export default {
   name: "Login",
@@ -55,7 +56,8 @@ export default {
             name: this.userValue,
             password: this.passValue,
         }).then((res) => {
-            console.log(res)
+          setLocalStorage('token',res.data.token)
+            this.$router.push('/layout');
         })
     }
   },

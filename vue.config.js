@@ -1,11 +1,3 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: stride
- * @Date: 2021-04-20 10:42:52
- * @LastEditors: stride
- * @LastEditTime: 2021-04-25 19:10:58
- */
 const path = require('path')
 function resolve(dir) {
   return path.join(__dirname, dir)
@@ -46,14 +38,4 @@ module.exports = {
       },
     },
   },
-  // 第三方插件配置
-  pluginOptions: {
-    'style-resources-loader': {
-      preProcessor: 'less',
-      patterns: [
-        path.resolve(__dirname, './src/assets/css/params.less')
-      ]
-    }
-  },
-
 }

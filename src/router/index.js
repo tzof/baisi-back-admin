@@ -17,7 +17,7 @@ const routes = [
       title: "登录" + baseTitle,
       auth: false,
     }
-  }
+  },
 ]
 
 const router = new VueRouter({
